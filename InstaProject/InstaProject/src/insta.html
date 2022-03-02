@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Пример веб-страницы</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/63eb5dc494.js" crossorigin="anonymous"></script>
+ </head>
+
+<body>
+<div class="start">
+<section class="page">
+    <main class="pagegstyle">
+        <section class="pagepoat">
+            <article class="lentapost" tabindex="-1">
+                <header class="verhushkalentapost">
+                    <div class="spanikonkauserpost">
+                        <span class=""></span>
+                            <div class="horizontal-scroll">
+                                <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"> <i class="fas fa - chevron-left" ></i> </button>
+                                <button class="btn-scroll" id="btn-scroll-right"onclick="scrollHorizontally(-1)"> <i class="fas fa - chevron-right" ></i> </button>
+                                <div class="storys-container">
+                                    <div class="story-circle">
+                                        <div class="dtn">
+                                            <img src="img/tower.jpg" id="tower" alt="">
+                                        </div>
+                                        <div class="modal">
+                                            <div class="modal_title">
+                                                User's history
+                                            </div>
+                                            <div class="modal-container">
+                                                <img class="imagemodal-container" src="img/ImageS1.jpg" id="tower" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="modal_bg">
+                                        </div>
+                                    </div> 
+                                    <div class="story-circle"><img src="img/ImageS1.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS2.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS3.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS4.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS1.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS1.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS2.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS3.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS4.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS1.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS2.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS3.jpg" alt=""></div>
+                                    <div class="story-circle"><img src="img/ImageS4.jpg" alt=""></div>
+                                </div>
+                            </div>
+                    </div>
+
+                </header>
+                <div>
+                    <div role="button1" class="slideshow-container" tabindex="0">
+                        <div class="mySlides fade">
+                            <div class="">
+                                <img src="img/Imagepost.jpg" class="imagepostpost" alt="oh">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="">
+                                <img src="img/Imagrpost2.jpg" class="imagepostpost" alt="oh">
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="">
+                                <img src="img/Imagepost3.jpg" class="imagepostpost" alt="oh">
+                            </div>
+                        </div>
+                        <a class="prev" onclick="minusSlide()">&#10094</a>
+                        <a class="next" onclick="plusSlide()">&#10095</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)" ></span>
+                        <span class="dot" onclick="currentSlide(2)" ></span>
+                        <span class="dot" onclick="currentSlide(3)" ></span>
+                    </div>
+                </div>
+                <div>
+                    <button class="cont"><i class="far fa-heart" id="gtn" value="button" type="button" onclick="Toggle()" width="24" height="24"></i>  
+                    </button>
+                    <button class="comment" id="buttoncomment">
+                        <img src="img/Image 10.jpg" width="24" height="24" role="img">
+                    </button>
+                    <button class="redirect" id="buttonredirect">
+                        <img src="img/Image 11.jpg" width="24" height="24" role="img">
+                    </button>        
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="rodroditelikonkainstagram">
+        <a href="/" tabindex="0">
+            <div class="roditelikonkainstagram">
+             <div class="ikonkainstagram">
+                <img alt="Instagram" class="ikonkainstagramstyle" src="img/1b47f9d0e595 (1).png" srcset="img/1b47f9d0e595 (1).png">
+            </div>
+            </div>
+        </a>
+    </div>
+    <div class="roditelelementpoisk">
+        <input autocapitalize="none" class="" placeholder="Поиск" type="text" value="">
+        <div class="poiskk" role="button" tabindex="0"></div>                          
+    </div>
+    <div class="roditelikonoksprava">
+        <div class="ikonkisprava">
+            <div>
+                <a href="/" tabindex="0">
+                    <img src="img/Image 14.jpg" class="imagehome" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="/" tabindex="0">
+                    <img src="img/Image 15.jpg" class="imagehome" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="/" tabindex="0">
+                    <img src="img/Image 16.jpg" class="imagehome" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="/" tabindex="0">
+                    <img src="img/Image 17.jpg" class="imagehome" alt="">
+                </a>
+            </div>
+        </div>
+    </div>     
+</section>
+</div>
+<script src="js/js.js"></script>
+</body>
+</html>

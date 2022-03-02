@@ -1,0 +1,294 @@
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.page {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+}
+
+.pagegstyle {
+    order: 4;
+    background-color: #fafafa;
+}
+.pagepoat {
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    width: 100%;
+}
+.ikonkispravaa {
+    -webkit-box-orient: horizontal;
+    text-align: center;
+    margin:0 auto;
+}
+.ikonkisprava div {
+    float: left;
+}
+
+.poiskk {
+    cursor: text;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+.roditelelementpoisk {
+    width: 215px;
+    height: 28px;
+    margin: auto;
+}
+.ikonkainstagram {
+    margin-top: 7px;
+}
+.roditelikonkainstagram {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+.rodroditelikonkainstagram {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 9999 0%;
+    -ms-flex: 1 9999 0%;
+    flex: 1 9999 0%;
+    min-width: 40px;
+}
+.ikonkainstagramstyle{
+    height: 6%;
+    width: 8%;
+    object-fit: contain;
+    margin: 0;
+}
+
+.roditelikonoksprava {
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+}
+.lentapost {
+     border-radius: 3px;
+     border: 1px solid rgba(var(--b6a,219,219,219),1);
+     border: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+.verhushkalentapost .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    height: 60px;
+    padding: 16px;
+    padding-right: 40px;
+}
+
+.spanikonkauserpost .container{
+    background-color: rgba(var(--b3f,250,250,250),1);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+}
+.imagepostpost {
+    width: 100%;
+}
+.imagehome {
+    width: 50%;
+    margin: -3px;
+}
+
+.like {
+    background: white;
+}
+
+.comment {
+    background: white;
+} 
+.redirect {
+    background: white;
+} 
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #242424;
+    padding: 2rem;
+    transition: opacity 0.25s;
+}
+.modal_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.modal-container {
+    size: 40px;
+}
+.imagemodal-container {
+    size: 40px;
+}
+.modal_bg {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.35);
+
+}
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+.modal_bg.show {
+    visibility: visible;
+    opacity: 1;
+    transition: 1;
+    transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: hotpink;
+    font-size: 12px;
+    padding: 8px, 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name:fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name:fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1;};
+}
+
+.horizontal-scroll {
+    width: 600px;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.horizontal-scroll .btn-scroll {
+    background-color: #ffff;
+    color: #999;
+    box-shadow: 0 0 10px #999;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 5px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 1s;
+}
+.storys-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    transition: 0.5s all ease-out;
+}
+.story-circle {
+    background: linear-gradient(rgb(231,0,231), rgb(255,115, 0));
+    width: 60px;
+    height: 60px;
+    margin: 15px 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story-circle img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid rgb(240, 235, 235);
+}
+.cont .comment .redirect{
+    padding: 10px;
+}
+.cont i {
+    font-size: 2rem;
+}
+.cont:hover i{
+    color: crimson;
+}
+.fas {
+    color: crimson;
+}
